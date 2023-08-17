@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="images/devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2befb0751e.js" crossorigin="anonymous"></script>
+      
+    <title>Checkout Page</title>
+
+  
+  </head>
+  <body>
+
+    <div class="container">
+      <header>
+        <h1 class="title">Checkout</h1>
+      </header>
+      
+      <main>
+        <div class="left-col">
+          <form action="">
+            <div class="input-details">
+              <div class="contact__inputs">
+                <p class="input-title">Contact Information</p>
+                <div class="input">
+                   <label for="email">Email</label>
+                   <div class="icon-input">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" class="icon" placeholder="Enter your email...">
+                  </div>
+                </div>
+    
+                 <div class="input">
+                   <label for="phone">Phone</label>
+                   <div class="icon-input">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="number" class="icon" placeholder="Enter your phone...">
+                   </div>
+                </div>
+              </div>
+   
+               <div class="shipping-inputs">
+                 <p class="input-title">Shipping Address</p>
+                   <div class="input">
+                      <label for="fullname">Full name</label>
+                      <div class="icon-input">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <input type="text" class="icon" value="Rodney Cotton">
+                      </div>
+                   </div>
+       
+                   <div class="input">
+                      <label for="address">Address</label>
+                      <div class="icon-input">
+                        <i class="fa-solid fa-house"></i>
+                        <input type="text" class="icon" placeholder="Your address...">
+                      </div>
+                      
+                   </div>
+       
+                   
+                   <div class="input">
+                     <label for="city">City</label>
+                     <div class="icon-input">
+                      <i class="fa-solid fa-city"></i>
+                      <input type="text" class="icon" placeholder="Your city...">
+                     </div>
+                    
+                   </div>
+   
+                    <div class="flex-group">
+                      <div class="dropdown">
+                        <div class="input">
+                          <label for="country">Country</label>
+                          <div class="icon-input">
+                            <i class="fa-solid fa-earth-americas"></i>
+                            <select name="country" id="country">
+                              <option value="" selected>Your country...</option>
+                              <option value="luzon">Luzon</option>
+                              <option value="visayas">Visayas</option>
+                              <option value="mindanao">Minadanao</option>
+                            </select>
+                          </div>
+                         
+                        </div>
+                      </div>
+    
+   
+                      <div class="input">
+                        <label for="postalcode">Postal code</label>
+                        <div class="icon-input">
+                          <i class="fa-solid fa-location-pin"></i>
+                          <input type="number" class="icon" placeholder="Your postal code...">
+                        </div>
+                       
+                      </div>
+                    </div>
+                </div>
+
+                <div class="cta-btns">
+                  <div class="checkbox-input">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Save this information for next time</label>
+                  </div>
+                  <button class="continue">Continue</button>
+                </div>      
+            </div>
+          </form>
+
+      
+
+              
+              
+        </div>
+
+        <!-- Right Column -->
+
+        <div class="right-col">
+
+          <div class="card">
+            <div class="product-box">
+              <div class="product">
+                <div class="product__image">
+                  <img src="images/photo1.png" alt="photo1">
+                </div>
+                
+                <div class="product__details">
+                  <div class="product__info">
+                    <p class="product__title">Vintage Bagpack</p>
+                    <div class="product__price">
+                      <div class="sale__price">$54.99</div>
+                      <div class="original__price">$94.99</div>
+                    </div>
+                  </div>
+                  
+
+                  <div class="quantity">
+                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                    <span>1</span>
+                    <button class="plus"><i class="fa-solid fa-minus"></i></button>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="product">
+                <div class="product__image">
+                  <img src="images/photo2.png" alt="photo2">
+                </div>
+                <div class="product__details">
+                  <div class="product__info">
+                    <p class="product__title">Levi Shoes</p>
+                    <div class="product__price">
+                      <div class="sale__price">$74.99</div>
+                      <div class="original__price">$124.99</div>
+                    </div>
+                  </div>
+                  
+
+                  <div class="quantity">
+                    <button class="plus"><i class="fa-solid fa-plus"></i></button>
+                    <span>1</span>
+                    <button class="plus"><i class="fa-solid fa-minus"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="checkout">
+              <div class="checkout__shipping">
+                <p>Shipping</p>
+                <span class="shipping__price">$19</span>
+              </div>
+
+              <div class="checkout__total">
+                <p>Total</p>
+                <span class="total__price">$148.98</span>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </main>
+      
+      <footer>
+        <p>created by <span>Erwin John A. Jerusalem</span> - devChallenges.io</p>
+      </footer>
+
+
+    </div>
+   
+  </body>
+</html>
